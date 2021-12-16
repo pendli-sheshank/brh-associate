@@ -1,0 +1,9 @@
+.nav-container {
+  display: flex;
+}
+.nav-logo {
+  max-width: 70px;
+  max-height: 70px;
+}
+@media screen and (max-width: 562px) {
+}
