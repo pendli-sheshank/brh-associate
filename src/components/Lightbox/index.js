@@ -7,7 +7,7 @@ import "./index.css";
 const Lightbox = () => {
   return (
     <SRLWrapper>
-      <Container>
+      <Container className="img-container">
         <Container className="images-container">
           {data.map((img) => (
             <Container className="images">

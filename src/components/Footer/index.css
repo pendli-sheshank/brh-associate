@@ -1,127 +1,179 @@
-.footer-container {
-  background-color: orange;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-}
-.footer-logo {
-  width: 70px;
-  height: 70px;
-}
-.row {
-  display: flex;
-  flex-direction: column;
-}
-.col {
-  display: flex;
-  flex-direction: row;
-}
-.address {
-  padding: 10px;
-  margin: 10px;
-}
-.box-container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
-}
-.email {
-  padding: 10px;
-  margin: 10px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-}
-.follow {
-  padding: 10px;
-  padding-bottom: 0;
-  margin: 10px;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.icon-container {
-  display: flex;
-  padding: 10px;
-  padding-left: 0;
-  margin-left: 0;
-}
-li {
-  list-style-type: none;
-  color: aliceblue;
-  font-size: 24px;
-  padding: 5px;
-  padding-top: 0;
-}
-.terms {
-  display: flex;
-  align-items: center;
-}
-.hello {
-  display: flex;
-}
-.last-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
-  width: 70%;
-}
-.copyright {
-  color: white;
-  font-weight: 600;
-}
-p {
-  font-weight: 600;
-}
-.line {
-  width: 1px;
-  color: white;
-  height: 25vh;
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .col {
+    display: flex;
     flex-direction: column;
     text-align: center;
   }
   .row {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .line {
-    display: none;
+    display: none !important;
+  }
+  li {
+    list-style-type: none;
+    color: aliceblue;
+    font-size: 24px;
+  }
+  .follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .address {
+    padding: 2px;
+    margin: 5px;
+  }
+  .policies {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
   }
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: orange;
+    min-height: 10vh;
   }
   .box-container {
     flex-direction: column;
     text-align: center;
   }
   .hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   .icon-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    margin-left: 0px;
   }
   .terms {
     display: flex;
     flex-direction: column;
+    padding: 2px;
   }
   span {
     display: none;
   }
   .last-row {
     flex-direction: column;
+    padding: 5px;
   }
   .version {
     text-align: right;
+    margin-bottom: 15px !important;
   }
   .footer-logo {
+    max-height: 70px;
+    max-width: 70px;
+  }
+  p {
+    font-size: 14px !important;
+    font-weight: 600;
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer-container {
+    background-color: orange;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding-top: 15px;
+  }
+  .footer-logo {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .col {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .address {
+    padding: 0px 15px;
+    margin: 20px;
+  }
+  .nn {
+    padding: 0px 15px 0px 42px;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 15px;
+    margin: 0px 15px;
+  }
+  .email {
+    padding: 0px 15px;
+  }
+  .follow {
+    padding: 0px 15px;
+  }
+  .icon-container {
+    display: flex;
+    padding: 7px 0px 0px;
+  }
+  li {
+    list-style-type: none;
+    color: aliceblue;
+    font-size: 24px;
+  }
+  .terms {
+    display: flex;
+    align-items: center;
+  }
+  .icon-container {
+    padding: 0px 15px;
+  }
+  .hello {
+    display: flex;
+    padding: 0px 15px;
+  }
+  .last-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 15px;
+    width: 65%;
+  }
+  .copyright {
+    color: white;
+    font-weight: 600;
+  }
+  p {
+    font-weight: 600;
+  }
+  .policies {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 0px;
   }
 }

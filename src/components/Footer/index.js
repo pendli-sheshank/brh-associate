@@ -23,15 +23,14 @@ const Footer = () => {
             <p>#04-01, Techniques Centre</p>
             <p>Singapore</p>
           </div>
-          <hr className="line" />
-          <div className="address">
+
+          <div className="address nn">
             <p>India Office</p>
             <p>#7, || Floor</p>
             <p>Karunaa Conquest IT Park, Ambattur</p>
             <p>Chennai - 600058</p>
-          </div>{" "}
-          <hr className="line" />
-          <div className="box-container">
+          </div>
+          <div className="box-container nn">
             <div className="hello">
               <div className="email">
                 <p>Email : support@berighthere.com</p>
@@ -55,23 +54,15 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="terms">
-              <p>
-                Company <span>|</span>
-              </p>
-              <p>
-                Privacy <span>|</span>{" "}
-              </p>
-              <p>
-                Terms <span>|</span>{" "}
-              </p>
-              <p>
-                Cookie <span>|</span>{" "}
-              </p>
-              <p>
-                Policy <span>|</span>{" "}
-              </p>
-              <p>Information</p>
+            <div>
+              <ul className="terms">
+                <li className="policies">Company |</li>
+                <li className="policies">Privacy |</li>
+                <li className="policies">Terms |</li>
+                <li className="policies">Cookie |</li>
+                <li className="policies">Policy |</li>
+                <li className="policies">Information |</li>
+              </ul>
             </div>
           </div>
         </div>

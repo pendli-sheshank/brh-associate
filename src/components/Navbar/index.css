@@ -1,9 +1,27 @@
-.nav-container {
-  display: flex;
+img {
+  width: 2rem;
+  height: 2rem;
 }
-.nav-logo {
-  max-width: 70px;
-  max-height: 70px;
+.hilight {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
-@media screen and (max-width: 562px) {
+.navi-flex {
+  flex-grow: inherit;
+}
+.hilight:hover {
+  color: orange !important;
+}
+.home {
+  color: orange !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+span {
+  color: orange;
+  font-weight: bolder;
+}
+.me-auto {
+  align-items: center;
 }

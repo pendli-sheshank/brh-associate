@@ -1,35 +1,43 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import "./index.css";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import "../Navbar/index.css";
 
-const NavigationBar = () => {
+const Navigationbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container className="nav-container">
-        <div>
+    <>
+      <Navbar bg="light" expand="lg">
+        <Container>
           <Navbar.Brand href="#home">
             <img
-              src="https://demo.berighthere.com/assests/img/newlandingpage/banner.png"
-              className="nav-logo"
-              alt="nav-logo"
+              className="=logo"
+              src="https://berighthere.com/assests/img/newlandingpage/banner.png"
+              alt="brand-logo"
             />
           </Navbar.Brand>
-        </div>
-        <div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse className="navi-flex" id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">HOME</Nav.Link>
-              <Nav.Link href="#link">OUR SPACES</Nav.Link>
-              <Nav.Link href="#link">SERVICES</Nav.Link>
-              <Nav.Link href="#link">ABOUT US</Nav.Link>
-              <Nav.Link href="#link">PARTNER WITH US</Nav.Link>
+              <Nav.Link href="#home">
+                <a className="home">HOME</a> <span>|</span>
+              </Nav.Link>
+              <Nav.Link href="#">
+                <a className="hilight"> OUR SPACES</a> <span>|</span>
+              </Nav.Link>
+              <Nav.Link href="#">
+                <a className="hilight">SERVICES</a> <span>|</span>
+              </Nav.Link>
+              <Nav.Link href="#">
+                <a className="hilight">ABOUT US</a> <span>|</span>
+              </Nav.Link>
+              <Nav.Link href="#">
+                <a className="hilight">PARTNER WITH US</a>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </div>
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
+    </>
   );
 };
 
-export default NavigationBar;
+export default Navigationbar;

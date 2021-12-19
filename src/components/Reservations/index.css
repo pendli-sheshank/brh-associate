@@ -1,0 +1,40 @@
+.reservation-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.reservation-images {
+  max-width: 200px;
+  max-height: 200px;
+}
+.bg-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px;
+  padding: 5px;
+}
+.bg {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.img-container {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .bg-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .reservation-images {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  .bg {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+  }
+}
